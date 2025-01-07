@@ -70,3 +70,32 @@ POST /api/topics: Add a new task.
 PUT /api/topics: Update an existing task.
 
 DELETE /api/topics: Delete a task.
+
+<!--  -->
+
+FOLDER STRUCTURE 
+![alt text](image.png)
+
+Register Page
+![alt text](image-7.png)
+
+SignIn Page
+![alt text](image-8.png)
+
+HOME PAGE WITHOUT ANY TASK 
+![alt text](image-1.png)
+
+ONCLICKING ADD TASK BUTTON 
+![alt text](image-2.png)
+
+After adding some task UI will look like 
+![alt text](image-3.png)
+
+Onclicking Delecte button 
+![alt text](image-4.png)
+
+MongoDb Database
+![alt text](image-5.png)
+
+Update UI
+![alt text](image-6.png)

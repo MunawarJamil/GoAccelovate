@@ -49,7 +49,7 @@ userSchema.methods.generateToken = function () {
       id: this._id,
       email: this.email,
     },
-    "temporary_random_secret_key_12345", // Temporary secret key for now
+    process.env.JWT_SECRET_KEY,
     {
       expiresIn: "1h",
     }

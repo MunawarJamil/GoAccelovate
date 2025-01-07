@@ -18,46 +18,10 @@ const AuthForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [fullname, setName] = useState("");
-  // const [confirmPassword, setConfirmPassword] = useState("");
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   const endpoint = isLogin ? '/api/login' : '/api/register';
-
-  //   try {
-  //     const response = await fetch(endpoint, {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({
-  //         email,
-  //         password,
-  //         ...(isLogin ? {} : { fullname, confirmPassword }),
-  //       }),
-  //     });
-
-  //     const data = await response.json();
-  //     if (response.ok) {
-  //       alert(data.message); // Success response
-  //     } else {
-  //       alert(data.message || "An error occurred");
-  //     }
-  //   } catch (error) {
-  //     console.error('Error:', error);
-  //     alert("Something went wrong, please try again.");
-  //   }
-  // };
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(email,fullname,password,confirmPassword);
-
-    //api/register for user registration
-    //endpoints
+    
     const endpoints = isLogin ? "/api/login" : "api/register";
     if (!isLogin && password !== confirmPassword) {
       return; // Prevent submission if passwords don't match
